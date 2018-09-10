@@ -1,0 +1,206 @@
+@charset "utf-8";
+body {
+  color: #ffffff;
+}
+.container {
+  display: none;
+}
+.container .block {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.5;
+}
+.container .img .mainimg {
+  width: 9.19977rem;
+  height: 10.186412rem;
+  background: url("../images/desdetail.png") no-repeat center center;
+  background-size: 9.19977rem 10.213078rem;
+  position: fixed;
+  top: 3.146588rem;
+  left: 0.39999rem;
+  z-index: 2;
+}
+.container .img .mainimg .close {
+  position: fixed;
+  top: 1.839954rem;
+  right: 0.39999rem;
+  width: 0.853312rem;
+  height: 1.306634rem;
+  background: url("../images/close.png") no-repeat center center;
+  background-size: 0.853312rem 1.306634rem;
+}
+header {
+  overflow: hidden;
+  height: 1.3333rem;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #dcdcdc;
+}
+header .left {
+  float: left;
+  height: 100%;
+  width: 1.3333rem;
+  background: url("../images/back.png") no-repeat center;
+  background-size: 0.293326rem 0.519987rem;
+}
+header .right {
+  float: right;
+  height: 100%;
+  width: 1.3333rem;
+  background: url("../images/consult.png") no-repeat center center;
+  background-size: 0.639984rem 0.599985rem;
+}
+header .center {
+  height: 100%;
+  width: 100%;
+  line-height: 1.3333rem;
+  margin: 0 1.3333rem;
+  font-size: 0.479988rem;
+  color: #4d4d4d;
+  text-align: center;
+}
+.banner {
+  width: 100%;
+  height: 12.413023rem;
+  background: url("../images/banner.png") no-repeat center center;
+  background-size: 100% auto;
+  position: relative;
+  overflow: hidden;
+}
+.banner .des {
+  width: 0.746648rem;
+  height: 1.453297rem;
+  background: url("../images/des.png") no-repeat center center;
+  background-size: 0.746648rem 1.453297rem;
+  position: absolute;
+  right: 0.26666rem;
+  top: -0.39999rem;
+}
+.banner .icon {
+  width: 7.266485rem;
+  height: 1.413298rem;
+  background: url("../images/icon.png") no-repeat center center;
+  background-size: 7.266485rem 1.413298rem;
+  position: absolute;
+  left: 1.46663rem;
+  bottom: 1.093306rem;
+}
+.news_fund {
+  width: 100%;
+  padding: 0 0.26666rem 0.39999rem;
+  background-color: #e12d23;
+}
+.news_fund .news {
+  height: 1.293301rem;
+  border-top: 1px solid #e12d23;
+  border-bottom: 1px solid #900000;
+  padding: 0 0.53332rem;
+  background: url("../images/notice.png") no-repeat left center;
+  background-size: 0.346658rem 0.346658rem;
+}
+.news_fund .news .carousel {
+  height: 0.493321rem;
+  overflow: hidden;
+  font-size: 0.213328rem;
+  margin-top: 0.39999rem;
+}
+.news_fund .news .carousel ul {
+  width: 39.999rem;
+  font-size: 0.319992rem;
+  color: #fff;
+}
+.news_fund .news .carousel ul li {
+  text-align: center;
+  width: 7.9998rem;
+  line-height: 0.493321rem;
+  float: left;
+  margin-right: 0.26666rem;
+}
+.news_fund .fund {
+  height: 1.586627rem;
+  margin-left: 0.159996rem;
+  font-size: 0.573319rem;
+  padding-top: 0.426656rem;
+}
+.news_fund .fund span {
+  padding: 0.053332rem 0.199995rem;
+  background-color: #900000;
+  vertical-align: middle;
+}
+.news_fund .fund .first,
+.news_fund .fund .last {
+  font-size: 0.39999rem;
+  background-color: #e12d23;
+}
+.news_fund .memo {
+  width: 100%;
+  height: 5.493196rem;
+  background: url("../images/memo.png") no-repeat center center;
+  background-size: 9.586427rem 5.493196rem;
+}
+.prolist {
+  padding: 0 0.26666rem 0.453322rem;
+  color: #000;
+}
+.prolist .title {
+  width: 100%;
+  height: 1.973284rem;
+  background: url("../images/sale.png") no-repeat center center;
+  background-size: 9.46643rem 1.119972rem;
+}
+.prolist .list {
+  width: 100%;
+}
+.prolist .list li {
+  color: #535353;
+  width: 100%;
+  height: 3.933235rem;
+  padding: 0.439989rem 0.26666rem;
+  background-color: #fef8f6;
+  box-sizing: border-box;
+  border: 1px solid #f6eeef;
+  margin: 0.13333rem 0;
+}
+.prolist .list li .img {
+  width: 2.79993rem;
+  margin-right: 0.466655rem;
+}
+.prolist .list li .img img {
+  width: 100%;
+}
+.prolist .list li span.name {
+  font-size: 0.373324rem;
+}
+.prolist .list li span.lei {
+  font-size: 0.293326rem;
+  margin-left: 0.26666rem;
+  color: #e12d23;
+  border: 2px solid #fdc6c2;
+  padding: 0.066665rem;
+  border-radius: 6px;
+}
+.prolist .list li p.help {
+  font-size: 0.319992rem;
+  height: 0.826646rem;
+  line-height: 0.826646rem;
+}
+.prolist .list li p.fund {
+  font-size: 0.453322rem;
+  color: #e12d23;
+}
+.prolist .list li button {
+  font-size: 0.373324rem;
+  color: #fff;
+  width: 2.93326rem;
+  height: 0.826646rem;
+  border-radius: 0.53332rem;
+  border: none;
+  background-color: #e12d23;
+  margin-top: 0.26666rem;
+}

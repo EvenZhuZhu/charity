@@ -1,0 +1,235 @@
+@charset "utf-8";
+@themes: "."; // 路径提取
+@import "@{themes}/px2rem"; // 导入换算 less
+@import "@{themes}/variable"; // 导入变量 less
+
+body {
+  color: #ffffff;
+}
+
+//block
+.container {
+  display: none;
+  .block {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0.5;
+  }
+
+  .img {
+    .mainimg {
+      width: 690*@rem;
+      height: 764*@rem;
+      background: url("../images/desdetail.png") no-repeat center center;
+      background-size: 690*@rem 766*@rem;
+      position: fixed;
+      top: 236*@rem;
+      left: 30*@rem;;
+      z-index: 2;
+      .close {
+        position: fixed;
+        top:138*@rem;
+        right:30*@rem;
+        width:64*@rem;
+        height:98*@rem;
+        background:url("../images/close.png") no-repeat center center;
+        background-size:64*@rem 98*@rem;
+      }
+    }
+
+  }
+}
+
+//header
+header {
+  overflow: hidden;
+  height: 100*@rem;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #dcdcdc;
+  .left {
+    float: left;
+    height: 100%;
+    width: 100*@rem;
+    background: url("../images/back.png") no-repeat center;
+    background-size: 22*@rem 39*@rem;
+  }
+  .right {
+    float: right;
+    height: 100%;
+    width: 100*@rem;
+    background: url("../images/consult.png") no-repeat center center;
+    background-size: 48*@rem 45*@rem;
+  }
+  .center {
+    height: 100%;
+    width: 100%;
+    line-height: 100*@rem;
+    margin: 0 100*@rem;
+    font-size: 36*@rem;
+    color: #4d4d4d;
+    text-align: center;
+  }
+}
+
+//banner
+.banner {
+  width: 100%;
+  height: 931*@rem;
+  background: url("../images/banner.png") no-repeat center center;
+  background-size: 100% auto;
+  position: relative;
+  overflow: hidden;
+  .des {
+    width: 56*@rem;
+    height: 109*@rem;
+    background: url("../images/des.png") no-repeat center center;
+    background-size: 56*@rem 109*@rem;
+    position: absolute;
+    right: 20*@rem;
+    top: -30*@rem;
+  }
+  .icon {
+    width: 545*@rem;
+    height: 106*@rem;
+    background: url("../images/icon.png") no-repeat center center;
+    background-size: 545*@rem 106*@rem;
+    position: absolute;
+    left: 110*@rem;
+    bottom: 82*@rem;
+  }
+}
+
+//news、fund、memo
+.news_fund {
+  width: 100%;
+  padding: 0 20*@rem 30*@rem;
+  background-color: @main-color;
+
+  //news
+  .news {
+    height: 97*@rem;
+    border-top: 1px solid @main-color;
+    border-bottom: 1px solid @dark-color;
+    padding: 0 40*@rem;
+    background: url("../images/notice.png") no-repeat left center;
+    background-size: 26*@rem 26*@rem;
+
+    .carousel {
+      height: 37*@rem;
+      overflow: hidden;
+      font-size: 16*@rem;
+      margin-top: 30*@rem;
+      ul {
+        width:3000*@rem;
+        font-size: 24*@rem;
+        color: #fff;
+        li {
+          text-align: center;
+          width:600*@rem;
+          line-height: 37*@rem;
+          float:left;
+          margin-right:20*@rem;
+        }
+      }
+    }
+  }
+
+  //fund
+  .fund {
+    height: 119*@rem;
+    margin-left: 12*@rem;
+    font-size: 43*@rem;
+    padding-top: 32*@rem;
+    span {
+      padding: 4*@rem 15*@rem;
+      background-color: @dark-color;
+      vertical-align: middle;
+    }
+    .first, .last {
+      font-size: 30*@rem;
+      background-color: @main-color;
+    }
+  }
+
+  //memo
+  .memo {
+    width: 100%;
+    height: 412*@rem;
+    background: url("../images/memo.png") no-repeat center center;
+    background-size: 719*@rem 412*@rem;
+  }
+}
+
+//prolist
+.prolist {
+  padding: 0 20*@rem 34*@rem;
+  .title {
+    width: 100%;
+    height: 148*@rem;
+    background: url("../images/sale.png") no-repeat center center;
+    background-size: 710*@rem 84*@rem;
+  }
+  .list {
+    width: 100%;
+    li {
+      color: #535353;
+      width: 100%;
+      height: 295*@rem;
+      padding: 33*@rem 20*@rem;
+      background-color: #fef8f6;
+      box-sizing: border-box;
+      border: 1px solid #f6eeef;
+      margin: 10*@rem 0;
+      .img {
+        width: 210*@rem;
+        margin-right: 35*@rem;
+        img{
+          width: 100%;
+        }
+      }
+
+      span.name {
+        font-size: 28*@rem;
+      }
+      span.lei {
+        font-size: 22*@rem;
+        margin-left: 20*@rem;
+        color: @main-color;
+        border: 2px solid #fdc6c2;
+        padding: 5*@rem;
+        border-radius: 6px;
+      }
+      p.help {
+        font-size: 24*@rem;
+        height: 62*@rem;
+        line-height: 62*@rem;
+      }
+      p.fund {
+        font-size: 34*@rem;
+        color: @main-color;
+      }
+      button {
+        font-size: 28*@rem;
+        color: #fff;
+        width: 220*@rem;
+        height: 62*@rem;
+        border-radius: 40*@rem;
+        border: none;
+        background-color: @main-color;
+        margin-top: 20*@rem;
+      }
+
+    }
+  }
+  .loading,.nulls {}
+  color:#000;
+}
+
+

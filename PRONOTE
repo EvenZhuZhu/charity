@@ -1,0 +1,42 @@
+1、布局使用flexible手淘插件，下拉加载使用dropload插件，金额动画使用count.js
+2、预编译器用less
+
+bass.less和index.less中
+@themes: "."; // 路径提取
+@import "@{themes}/px2rem"; // 导入换算 less
+@import "@{themes}/variable"; // 导入变量 less
+less中单位使用 690*@rem
+
+3、滚动轮播
+获取所有的li
+复制第一个li放在最后
+初始化index=0
+定时器：
+index++,index >= $lis.length时候index=0,
+$('.carousel ul').css('transition', 'none');
+$('.carousel ul').css('transform', 'translateX(' + 0);
+
+$('.carousel ul').css('transition', 'transform 1s');
+$('.carousel ul').css('transform', 'translateX(' + (-index * $lis[0].offsetWidth) + 'px)')
+
+4、显示详细活动禁止页面滑动
+  var flag = 1;//可滑动
+  $('.des').on('click', function () {
+    $('.container').css('display', 'block');
+    flag = 0;//不可滑动
+    document.addEventListener('touchmove', function (e) {
+      if (flag = 0) {
+        e.preventDefault()
+      }
+    })
+  })
+
+  关闭详细活动说明可以滑动
+   $('.close').on('click', function () {
+      $('.container').css('display', 'none');
+      flag = 1;//可滑动
+    })
+
+5、点击滑动页面到指定位置$('body,html').animate({'scrollTop': 1690}, 1000);
+
+6、上拉加载，加载到最后显示无数据
